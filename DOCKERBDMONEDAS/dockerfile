@@ -1,0 +1,4 @@
+FROM postgres:latest
+
+COPY DDL_Monedas.sql / docker-entrypoint-initdb.d/
+COPY DML_Monedas.sql / docker-entrypoint-initdb.d/
