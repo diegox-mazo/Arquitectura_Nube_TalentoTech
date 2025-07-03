@@ -1,0 +1,22 @@
+D:\apache-maven-3.9.10-bin\apache-maven-3.9.10\bin
+
+REPOSITORIO DOCKER: api_monedas_tt
+
+COMANDOS:
+
+docker build . -t apimonedas
+
+docker images
+
+docker tag apimonedas moxow/api_monedas_tt
+
+docker push moxow/api_monedas_tt
+
+docker inspect -f '{{range $k, $v := .NetworkSettings.Networks}}{{$k}} {{end}}' 3eb   
+(los 3 primeros caracteres del CONTENEDOR)
+
+docker run --name dockermonedas_clase_4_martes --network dockermonedas_clase_4_martes_red -p 9080:8080 -d moxow/api_monedas_tt
+                  [contenedor]                           [red]                                            [tag imagen]
+
+
+docker network ls
