@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: dockerdbmonedas
+    ports:
+      - "5440:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: monedas
+    networks:
+      - red
+    volumes: # (Espacio de almacenamiento)
+      - ./init:/docker-entrypoint-initdb.d/
+      # ./init --> es el nombre de la carpeta en donde estan los archivos SQL del proyecto
+
+networks:
+  red:
+    driver: bridge # bridge (automatico) or external (por partes) (Si se va a lanzar todas las Apis con un solo Docker compose se utiliza el comando "bridge")
+      
