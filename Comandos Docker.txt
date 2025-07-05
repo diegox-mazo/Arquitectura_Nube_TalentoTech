@@ -26,12 +26,15 @@ docker network ls
 JENKINS:
 
 diegopruebas2024.1@gmail.com
+http://localhost:9090/
 
 NETWORK
 
-5ba
+docker network rm tt_monedas_red     --> borrar red
+docker network create tt_db_monedas_red --> crear red
+docker network connect tt_db_monedas_red dockerdbmonedas  --> vincular red
+			[red]		[contenedor]
 
-http://localhost:9090/
 
 
 GIT:
