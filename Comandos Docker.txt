@@ -1,3 +1,5 @@
+
+
 D:\apache-maven-3.9.10-bin\apache-maven-3.9.10\bin
 
 REPOSITORIO DOCKER: api_monedas_tt
@@ -18,5 +20,26 @@ docker inspect -f '{{range $k, $v := .NetworkSettings.Networks}}{{$k}} {{end}}' 
 docker run --name dockermonedas_clase_4_martes --network dockermonedas_clase_4_martes_red -p 9080:8080 -d moxow/api_monedas_tt
                   [contenedor]                           [red]                                            [tag imagen]
 
-
 docker network ls
+
+
+JENKINS:
+
+diegopruebas2024.1@gmail.com
+
+NETWORK
+
+5ba
+
+http://localhost:9090/
+
+
+GIT:
+
+git rebase origin/main
+
+
+D:\apache-maven-3.9.10-bin\apache-maven-3.9.10\bin
+
+CD:
+
